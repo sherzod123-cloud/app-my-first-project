@@ -1,0 +1,322 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/style/libs.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style/style.css">
+
+    <!-- yangi linklar -->
+    <link rel="stylesheet" href="/assets/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/style/owl.theme.default.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+
+
+
+    <script src="https://kit.fontawesome.com/155f5721f0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Project</title>
+    <style>
+    </style>
+</head>
+<body style="background-image: url('assets/img/back.jpg'); ">
+<!-- Top navigation start -->
+<nav class="pl-2 pr-2 top-navbar navbar pb-0 mb-0 navbar-expand navbar-light  ">
+    <div class="container bg-white mb-0  border-right border-left border-top">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">O'zb</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ўзб</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Рус</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link special" href="#">Aa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/auth/signup">
+                    <img src="assets/img/Fill_1.png" class="mr-1" width="20" alt=""><u>Авторизация</u>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Top navigation end -->
+
+<header >
+    <div class="pl-2 pr-2 mt-0 bg-white border-bottom border-top border-left border-right container p-0">
+        <div class="row py-3">
+            <div class="col-md-1  col-sm-3 col-3 pr-2 pl-0">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+            <div class="col-md-3 col-sm-9 col-9 pt-2">
+                <div class="mt-3">
+                    <a href="">
+                        <h5>
+                            Детская школа «Баркамол авлод» города Ташкента
+                        </h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main navbar -->
+<nav style="font-size: 9px; " class="  navbar navbar-expand-lg navbar-light  main-navbar pt-0 pb-0 pl-2 pr-2">
+    <div class="container bg-white pb-0 pt-0 pl-2 pr-2 border-right border-left">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav p-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Главная</a>
+                </li>
+
+                <!-- Dropdown svedeniya -->
+
+                <li class="nav-item dropdown navbar-dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Сведения
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/about">О нас</a></li>
+                        <li><a class="dropdown-item" href="/history">История центра </a></li>
+                        <li><a class="dropdown-item" href="/contacts">Контакты </a></li>
+                        <li><a class="dropdown-item" href="/departments">Районные подразделения </a></li>
+
+                    </ul>
+                </li>
+
+                <!--  Dokumenti -->
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="/documents">Документы</a>
+                </li>
+
+                <!-- Dropdown Dlya vas -->
+
+                <li class="nav-item dropdown navbar-dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Для Вас
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <li><a class="dropdown-item" href="/course">Как записать ребёнка в кружок?</a></li>
+                        <li><a class="dropdown-item" href="/raspisaniya">Расписание </a></li>
+                    </ul>
+                </li>
+
+                <!--  Novosti -->
+                <li class="nav-item ">
+                    <a class="nav-link" href="/news">Новости</a>
+                </li>
+                <!-- Dropdown -->
+
+                <!-- Dropdown  O nas smi -->
+
+                <li class="nav-item dropdown navbar-dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Галереи
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                        <li><a class="dropdown-item" href="/photogalery">Фотогалерея</a></li>
+                        <li><a class="dropdown-item" href="/allVideos">Видеотека </a></li>
+
+                    </ul>
+                </li>
+
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="/map">Мы на карте города</a>
+                </li>
+
+
+            </ul>
+            <form  th:action="@{/teacher/search}" method="get" class="form-inline search-box ml-auto my-lg-0">
+                <input  type="text" id="search"  required name="keyword" placeholder="Педагок поиск" aria-label="Search">
+                <button type="submit"  class="btn bg-light" >Search</button>
+                <input type="button" class="btn bg-danger" value="Clear" id="btnClear" onclick="clearSearch()" />
+            </form><br>
+
+        </div>
+
+    </div>
+
+</nav>
+  <!-- Main navbar end -->
+
+
+
+
+
+ <div class="container border bg-white pt-5 pb-5">
+ 	<div class="row">
+ 		<div class="col-sm-3" th:each="lessonSchedule: ${lessonScheduales}">
+ 			<ul class="list-inline">
+ 				<li style="border-radius: 3px; display: block;" id="cl1"
+                   onclick="selectLesScheSection(value)" th:value="${lessonSchedule.getId()}"
+                    class="p-3 border mt-1 d-block lili" th:text="${lessonSchedule.getClassName()}">
+                </li>
+ 			</ul>
+
+ 		</div>
+ 		<div class="col-sm-9">
+ 			<div class="col-sm-12 mt-2">
+ 				<p>
+ 					Вибирите урок
+ 				</p>
+ 				<select name="lessonSetionName"  id="selectType" class="border" style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border: none; border-radius: 3px;">
+ 					<option value="0">Select section</option>
+ 				</select>
+ 			</div>
+ 			<div class=" col-sm-12 p-3 border mt-2 " style="border-radius: 3px;">
+ 				<p id="demo"></p>
+ 				<table class="table table-bordered table-hover">
+ 					<thead>
+ 						<tr>
+                            <th>
+                                LessonSectionName
+                            </th>
+ 							<th>
+ 								Dushanba
+ 							</th>
+ 							<th>
+ 								Seshanba
+ 							</th>
+ 							<th>
+ 								Chorshanba
+ 							</th>
+ 							<th>
+ 								Payshanba
+ 							</th>
+ 							<th>
+ 								Juma
+ 							</th>
+ 							<th>
+ 								Shanba
+ 							</th>
+ 						</tr>
+ 					</thead>
+ 					<tbody id="lessonTable">
+
+                    </tbody>
+ 				</table>
+ 				<p>
+ 					Места урок:
+ 				</p>
+ 				<p id="mesta">
+
+ 				</p>
+ 			</div>
+ 		</div>
+    </div>
+
+ 	<div class="row">
+ 		<div class="col-sm-12 pl-5 pr-5">
+ 			<img id="imagels" alt="" style="width: 100%; height: auto;">
+ 		</div>
+ 		<div class="col-sm-12 pt-3 pl-5 pr-5">
+ 			Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни первую щеке своих то, рукопись диких силуэт коварный пунктуация подпоясал вопроса решила напоивший? Одна предупреждал своего жаренные послушавшись речью о рыбного букв, домах языкового назад дал на берегу. Пунктуация единственное предупредила залетают, несколько, домах скатился, необходимыми lorem точках букв, свое вскоре. Рукопись всеми точках, себя, власти на берегу несколько. Он силуэт ручеек, свою. Речью грустный ручеек переписали всемогущая, продолжил толку несколько коварный меня, своего пояс запятых использовало живет! Своих парадигматическая языком домах ведущими даже необходимыми первую рукопись сбить злых вершину, путь диких это большого там ipsum предупредила. Обеспечивает предложения, жизни приставка сих предупредила, большого. Наш предупредила подпоясал составитель прямо. Образ, даль залетают она подпоясал взобравшись над продолжил своих заглавных взгляд живет буквенных, предупредила рекламных свой. Даже несколько силуэт рот, скатился! Ведущими до взобравшись вскоре большого толку запятых проектах продолжил несколько переулка точках своего ему силуэт, которой пунктуация то имеет обеспечивает продолжил рот путь коварных lorem назад. Буквенных родного гор дороге, дал, текста страну строчка мир это, вопрос, одна большой он свой там. По всей рекламных которое ведущими предложения ему, рыбными буквенных наш запятых пустился, образ за на берегу напоивший одна заглавных он собрал свое рот свой дал журчит грустный диких эта переписывается безорфографичный текста. Заглавных заманивший алфавит, над необходимыми, деревни обеспечивает использовало раз своего парадигматическая грустный силуэт, ты скатился не они свое. Маленький первую живет путь дал толку над парадигматическая сбить решила буквоград, вершину имени свое предупреждал страну заголовок языком имеет букв послушавшись безопасную себя по всей семь прямо речью злых своих. Свое, лучше грамматики, подпоясал гор реторический что вершину коварный о сбить от всех коварных диких по всей собрал власти несколько, запятых пунктуация даже путь! Своего пустился наш составитель свой все, своих раз диких выйти. Щеке взобравшись, лучше живет рекламных подпоясал, это всеми деревни, родного lorem себя, рыбного точках. Языкового правилами своих текстов, что океана.
+ 		</div>
+ 	</div>
+ </div>
+    <footer>
+      <div class="caption w-100"></div>
+      <div class="footer-content w-100">
+        <div class="container boder-bottom border-color-white">
+          <div class="row">
+            <div class="col-md-4">
+              <h4><img src="assets/img/location.png" class="mr-2 mb-1" width="20" alt="">Манзилимиз:</h4>
+              <p>Тошкент шаҳри, Чилонзор тумани Бунёдкор  кўчаси, Адиблар хиёбони. Индекс: 100066</p>
+            </div>
+            <div class="col-md-4">
+              <h4><img src="assets/img/mobile.png" class="mr-1 mb-1" width="15" alt=""> Биз билан алоқа:</h4>
+              <p>Телефон: +998(71) 231-83-49 <br>e-mail: info@ijod.uz</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Ижтимоий тармоқлар </h4>
+              <div class="row">
+                <a href="" class="social-btn mr-2"><img src="assets/img/Facebook_Icon.png" alt=""></a>
+                <a href="" class="social-btn mr-2"><img src="assets/img/Twitter_Icon.png" alt=""></a>
+                <a href="" class="social-btn"><img src="assets/img/ic_telegram_deactive.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container copyright border-top border-white pt-3">
+          <div class="d-md-flex flex-row">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="/assets/js/libs.js"></script>
+    <script type="text/javascript" src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/additional.js"></script>
+  <script type="text/javascript">
+      function selectLesScheSection(lessonId) {
+          document.getElementById("selectType").innerHTML='';
+          $('#selectType').append('<option value="0">Select section</option>');
+              $.ajax({
+                  url: '/admin/lesSchedualSection/get/'+ lessonId,
+                  method: 'get',
+                  success: function (lesSections) {
+                      lesSections.forEach(function (les) {
+                          $('#selectType').append('<option value="'+les.id+'">'+les.sectionName+'</option>');
+                      });
+                  }
+              });
+      }
+          $("#selectType").on('change', function () {
+              $.ajax({
+                  url: '/admin/lessonSection/'+ $("#selectType").val(),
+                  method: 'get',
+                  success: function (lessonSchedual) {
+                      var trTable=$('<tr>' +
+                          '<td>' +
+                          lessonSchedual.sectionName+
+                          '</td>'+
+                          '<td>' +
+                          lessonSchedual.mondayTime+
+                          '</td>' +
+                          '<td>' +
+                          lessonSchedual.tuesdayTime+
+                          '</td>' +
+                          '<td>' +
+                          lessonSchedual.wednesdayTime+
+                          '</td>' +
+                          '<td>' +
+                          lessonSchedual.thursdayTime+
+                          '</td>' +
+                          '<td>' +
+                          lessonSchedual.fridayTime+
+                          '</td>' +
+                          '<td>' +
+                          lessonSchedual.saturdayTime+
+                          '</td>' +
+                          '</tr>');
+                      $("#lessonTable").append(trTable);
+                  }
+              })
+          });
+
+  </script>
+
+
+  </body>
+</html>

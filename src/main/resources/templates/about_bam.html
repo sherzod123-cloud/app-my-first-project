@@ -1,0 +1,319 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/assets/style/libs.css">
+  <link rel="stylesheet" type="text/css" href="/assets/style/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/style/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/style/style.css">
+
+  <!-- yangi linklar -->
+  <link rel="stylesheet" href="/assets/style/owl.carousel.min.css">
+  <link rel="stylesheet" href="/assets/style/owl.theme.default.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+
+
+
+  <script src="https://kit.fontawesome.com/155f5721f0.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Project</title>
+  <style>
+  </style>
+</head>
+<body style="background-image: url('assets/img/back.jpg'); ">
+<!-- Top navigation start -->
+<nav class="pl-2 pr-2 top-navbar navbar pb-0 mb-0 navbar-expand navbar-light  ">
+  <div class="container bg-white mb-0  border-right border-left border-top">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">O'zb</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Ўзб</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Рус</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link special" href="#">Aa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/auth/signup">
+          <img src="assets/img/Fill_1.png" class="mr-1" width="20" alt=""><u>Авторизация</u>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Top navigation end -->
+
+<header >
+  <div class="pl-2 pr-2 mt-0 bg-white border-bottom border-top border-left border-right container p-0">
+    <div class="row py-3">
+      <div class="col-md-1  col-sm-3 col-3 pr-2 pl-0">
+        <img src="assets/img/logo.png" alt="">
+      </div>
+      <div class="col-md-3 col-sm-9 col-9 pt-2">
+        <div class="mt-3">
+          <a href="">
+            <h5>
+              Детская школа «Баркамол авлод» города Ташкента
+            </h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main navbar -->
+<nav style="font-size: 9px; " class="  navbar navbar-expand-lg navbar-light  main-navbar pt-0 pb-0 pl-2 pr-2">
+  <div class="container bg-white pb-0 pt-0 pl-2 pr-2 border-right border-left">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav p-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Главная</a>
+        </li>
+
+        <!-- Dropdown svedeniya -->
+
+        <li class="nav-item dropdown navbar-dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Сведения
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="/about">О нас</a></li>
+            <li><a class="dropdown-item" href="/history">История центра </a></li>
+            <li><a class="dropdown-item" href="/contacts">Контакты </a></li>
+            <li><a class="dropdown-item" href="/departments">Районные подразделения </a></li>
+
+          </ul>
+        </li>
+
+        <!--  Dokumenti -->
+
+        <li class="nav-item ">
+          <a class="nav-link" href="/documents">Документы</a>
+        </li>
+
+        <!-- Dropdown Dlya vas -->
+
+        <li class="nav-item dropdown navbar-dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Для Вас
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+            <li><a class="dropdown-item" href="/course">Как записать ребёнка в кружок?</a></li>
+            <li><a class="dropdown-item" href="/raspisaniya">Расписание </a></li>
+          </ul>
+        </li>
+
+        <!--  Novosti -->
+        <li class="nav-item ">
+          <a class="nav-link" href="/news">Новости</a>
+        </li>
+        <!-- Dropdown -->
+
+        <!-- Dropdown  O nas smi -->
+
+        <li class="nav-item dropdown navbar-dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Галереи
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+            <li><a class="dropdown-item" href="/photogalery">Фотогалерея</a></li>
+            <li><a class="dropdown-item" href="/allVideos">Видеотека </a></li>
+
+          </ul>
+        </li>
+
+
+        <li class="nav-item ">
+          <a class="nav-link" href="/map">Мы на карте города</a>
+        </li>
+
+
+      </ul>
+      <form  th:action="@{/teacher/search}" method="get" class="form-inline search-box ml-auto my-lg-0">
+        <input  type="text" id="search"  required name="keyword" placeholder="Педагок поиск" aria-label="Search">
+        <button type="submit"  class="btn bg-light" >Search</button>
+        <input type="button" class="btn bg-danger" value="Clear" id="btnClear" onclick="clearSearch()" />
+      </form><br>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+<!-- Main navbar end -->
+  <!-- Main navbar end -->
+
+
+
+
+
+  <!-- Content -->
+    <div class="container border mt-0 mb-5 bg-white  conabout" >
+      
+      <div class=" text-center row">
+        <div style="color: #83C34B;"  class="col-lg-12">
+          <h1>О нас</h1>
+        </div>
+      </div>
+      <!-- corusel -->
+      <div class="row">
+        <div class="col-lg-12 p-2 mt-3 mb-3" >
+<!--          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">-->
+<!--            <div class="carousel-inner">-->
+<!--              <div th:class="${aboutCarousel.getId()}==1 ? 'carousel-item active' : 'carousel-item'">-->
+<!--                <img style="height: 500px;" class="d-block w-100 imgcorusel" th:src="@{/admin/getAboutCarouselContent/{id} (id=${aboutCarousel.getId()})}"  alt="First slide">-->
+<!--              </div>-->
+<!--&lt;!&ndash;              <div class="carousel-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img style="height: 500px;" class="d-block w-100 imgcorusel"  alt="Second slide">&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="carousel-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img style="height: 500px;" class="d-block w-100 imgcorusel" src="assets/img/3.jpg" alt="Third slide">&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--            </div>-->
+<!--            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">-->
+<!--              <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--              <span class="sr-only">Previous</span>-->
+<!--            </a>-->
+<!--            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">-->
+<!--              <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--              <span class="sr-only">Next</span>-->
+<!--            </a>-->
+<!--          </div>-->
+            <div class="owl-carousel owl-theme">
+                <div class="item" th:each="aboutCarousel: ${aboutCarousels}">
+                    <img th:src="@{/admin/getAboutCarouselImgContent/{id} (id=${aboutCarousel.getId()})}" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- end corusel -->
+
+      <!-- text -->
+        <div class="row" th:each="aboutText: ${aboutTexts}">
+          <div class="col-lg-4" >
+            <img style="width: 100%; height: 100%" class="img-thumbnail" th:src="@{/admin/getImgContent/{image_id} (image_id=${aboutText.getImage_id()})}" alt="">
+          </div>
+          <div class="col-lg-8  font-weight-bold">
+            <p class="abouttext" th:text="${aboutText.getDescription()}">
+            </p>
+
+            
+          </div>
+        </div>
+
+        <div class="row">
+          <div style=" font-size: 30px; font-family: fantasy; color: #83C34B;" class=" font-weight-bold  text-center col-lg-12">
+            Наша цель
+          </div>
+
+        </div>
+
+        <div class=" text-center row mt-5">
+           
+            <div class="col-lg-3 border-right border-left" th:each="ourGoal: ${ourGoalList}">
+                <i style="font-size: 70px; color: #83C34B;" class="fa fa-brain"></i>
+                <p class="pt-4" th:text="${ourGoal.getDescription()}"></p>
+            </div>
+        </div>
+      <!-- end text -->
+
+      <div class="row p-1">
+        <div style=" font-size: 30px; font-family: fantasy; color: #83C34B;" class=" font-weight-bold mt-4 text-center col-lg-12">
+          Наша команда
+        </div>
+      </div> 
+      <div class="row text-center">
+
+        <div style="font-size: 13px; background-color: transparent;" class="col-lg-4 p-4 " th:each="kamanda: ${kamandaLists}">
+          <a th:href="@{/morePeople/{id} (id=${kamanda.getId()})}" class="p-3 border " style="background-color: white;">
+          <img style="width: 60%; height: 130px;" class="img-thumbnail" th:src="@{/admin/peopleImg/getContent/{image_id} (image_id=${kamanda.getImage_id()})}" >
+          <p> 
+            <h6 style="color: grey;" th:text="${kamanda.getPosition()}">веб разработчик</h6>
+            <h6 class="font-weight-bold" th:text="${kamanda.getFullname()}"></h6>
+          </p>
+            <p th:text="${kamanda.getBiography()}">
+            </p>
+            <a style="text-decoration: none;" href="" class="m-1">
+              <i style="color: #C12637; font-size: 25px;" class="fab fa-instagram"></i>
+            </a>
+            <a  style="text-decoration: none;"  href="" class="m-1">
+              <i style="color: #4064AD; font-size: 25px;" class="fab fa-facebook-square"></i>
+            </a>
+            <a  style="text-decoration: none;" href="" class="m-1">
+              <i style="color: #1C9BEA; font-size: 25px;" class="fab fa-twitter-square"></i>
+            </a>
+            <a  style="text-decoration: none;"   href="" class="m-1">
+              <i style="color: #EE7E1F; font-size: 25px;" class="fab fa-odnoklassniki-square"></i>
+            </a>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  <!-- Content End -->
+
+    <footer>
+      <div class="caption w-100"></div>
+      <div class="footer-content w-100">
+        <div class="container boder-bottom border-color-white">
+          <div class="row">
+            <div class="col-md-4">
+              <h4><img src="assets/img/location.png" class="mr-2 mb-1" width="20" alt="">Наш адрес:</h4>
+              <p>Город Ташкент, Мирзо Улугбекский район, проспект Мустакиллик, дом 69, 100000 
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h4><img src="assets/img/mobile.png" class="mr-1 mb-1" width="15" alt=""> Контакты:</h4>
+              <p>Телефон:(99871) 237-34-22 директор <br>(99871) 237-34-42 заместитель директора<br>(99871) 237-10-73 отдел духовности и просветительства <br> факс: (99871) 237-32-56  <br>e-mail: barkamol-avlod@inbox.uz</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Ижтимоий тармоқлар </h4>
+              <div class="row">
+                <a href="" class="social-btn mr-2"><img src="assets/img/Facebook_Icon.png" alt=""></a>
+                <a href="" class="social-btn mr-2"><img src="assets/img/Twitter_Icon.png" alt=""></a>
+                <a href="" class="social-btn"><img src="assets/img/ic_telegram_deactive.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container copyright border-top border-white pt-3">
+          <div class="d-md-flex flex-row">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="/assets/js/libs.js"></script>
+    <script type="text/javascript" src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/additional.js"></script>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+
+<!--  <script type="text/javascript">-->
+<!--          $(".carousel-item:first").addClass('active');-->
+<!--  </script>-->
+
+  </body>
+</html>

@@ -1,0 +1,62 @@
+.audioplayer {
+  width: 100%;
+  padding: 10px 0px;
+  position: relative;
+}
+.audioplayer p {
+  width: 80%;
+}
+
+#pButton {
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  z-index: 20;
+  outline: none;
+  background-color: #fff;
+}
+
+.pButton {
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  z-index: 20;
+  outline: none;
+  background-color: #fff;
+}
+
+.play {
+  background: url(".././assets/img/play.png");
+}
+
+.pause {
+  background: url(".././assets/img/pause.png");
+}
+
+#timeline {
+  position: absolute;
+  visibility: hidden;
+  width: 400px;
+  height: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#playhead {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: 1px;
+  background: black;
+}

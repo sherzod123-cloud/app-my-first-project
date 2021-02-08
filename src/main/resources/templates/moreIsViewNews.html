@@ -1,0 +1,259 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/style/libs.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style/style.css">
+
+    <!-- yangi linklar -->
+    <link rel="stylesheet" href="/assets/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/style/owl.theme.default.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+
+
+
+    <script src="https://kit.fontawesome.com/155f5721f0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Project</title>
+    <style>
+    </style>
+</head>
+<body style="background-image: url('assets/img/back.jpg'); ">
+<!-- Top navigation start -->
+<nav class="pl-2 pr-2 top-navbar navbar pb-0 mb-0 navbar-expand navbar-light  ">
+    <div class="container bg-white mb-0  border-right border-left border-top">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">O'zb</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ўзб</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Рус</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link special" href="#">Aa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/auth/signup">
+                    <img src="assets/img/Fill_1.png" class="mr-1" width="20" alt=""><u>Авторизация</u>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Top navigation end -->
+
+<header >
+    <div class="pl-2 pr-2 mt-0 bg-white border-bottom border-top border-left border-right container p-0">
+        <div class="row py-3">
+            <div class="col-md-1  col-sm-3 col-3 pr-2 pl-0">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+            <div class="col-md-3 col-sm-9 col-9 pt-2">
+                <div class="mt-3">
+                    <a href="">
+                        <h5>
+                            Детская школа «Баркамол авлод» города Ташкента
+                        </h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main navbar -->
+<nav style="font-size: 9px; " class="  navbar navbar-expand-lg navbar-light  main-navbar pt-0 pb-0 pl-2 pr-2">
+    <div class="container bg-white pb-0 pt-0 pl-2 pr-2 border-right border-left">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav p-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Главная</a>
+                </li>
+
+                <!-- Dropdown svedeniya -->
+
+                <li class="nav-item dropdown navbar-dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Сведения
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/about">О нас</a></li>
+                        <li><a class="dropdown-item" href="/history">История центра </a></li>
+                        <li><a class="dropdown-item" href="/contacts">Контакты </a></li>
+                        <li><a class="dropdown-item" href="/departments">Районные подразделения </a></li>
+
+                    </ul>
+                </li>
+
+                <!--  Dokumenti -->
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="/documents">Документы</a>
+                </li>
+
+                <!-- Dropdown Dlya vas -->
+
+                <li class="nav-item dropdown navbar-dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Для Вас
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <li><a class="dropdown-item" href="/course">Как записать ребёнка в кружок?</a></li>
+                        <li><a class="dropdown-item" href="/raspisaniya">Расписание </a></li>
+                    </ul>
+                </li>
+
+                <!--  Novosti -->
+                <li class="nav-item ">
+                    <a class="nav-link" href="/news">Новости</a>
+                </li>
+                <!-- Dropdown -->
+
+                <!-- Dropdown  O nas smi -->
+
+                <li class="nav-item dropdown navbar-dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Галереи
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                        <li><a class="dropdown-item" href="/photogalery">Фотогалерея</a></li>
+                        <li><a class="dropdown-item" href="/allVideos">Видеотека </a></li>
+
+                    </ul>
+                </li>
+
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="/map">Мы на карте города</a>
+                </li>
+
+
+            </ul>
+            <form  th:action="@{/teacher/search}" method="get" class="form-inline search-box ml-auto my-lg-0">
+                <input  type="text" id="search"  required name="keyword" placeholder="Педагок поиск" aria-label="Search">
+                <button type="submit"  class="btn bg-light" >Search</button>
+                <input type="button" class="btn bg-danger" value="Clear" id="btnClear" onclick="clearSearch()" />
+            </form><br>
+
+        </div>
+
+    </div>
+
+</nav>
+<!-- Main navbar end -->
+
+
+
+<!-- Content -->
+<div class="border-top bg-white container border-left border-bottom border-right mb-5 px-0">
+
+    <!-- Top news -->
+    <div class="news border-bottom">
+        <div class="row">
+            <div class="col-lg-8 py-4">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="./assets/img/yangiliklar/yangilik1.jpg" alt="">
+                    </div>
+                    <div class="col-sm-7 text-left">
+                        <h3>На зимних каникулах состоялась премьера спектакля драматического кружка под руководством Мамеда Алиевича Расулова</h3>
+                        <p>8.01.2020</p>
+                        <button class="btn px-5 bg-white border btbatafsil">Узнать больше</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 right-section px-0 border-left">
+
+                <a href="" class="col-md-6">
+                    <div class="row border-bottom pt-0">
+                        <div class="col-2 p-0">
+                            <span>10.01.2020</span>
+                        </div>
+                        <div class="col-9 pl-0">
+                            <p>12 кружковцев детской школы "Баркамол авлод" города Ташкента стали лауреатами "Asia Creative Art Exhibition" в г.Токио Япония</p>
+                        </div>
+                        <div class="col-1 p-0">
+                            <!-- <button>></button> -->
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h3 th:text="${isNewsById.getTitle()}"></h3>
+        </div>
+    </div>
+    <div class="col-md-12 mt-3">
+        <p th:text="${isNewsById.getDescription()}"></p><br>
+        <p class="mt-3" th:text="${isNewsById.getCreated_at()}"></p>
+    </div>
+</div>
+
+
+
+
+<footer>
+    <div class="caption w-100"></div>
+    <div class="footer-content w-100">
+        <div class="container boder-bottom border-color-white">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4><img src="assets/img/location.png" class="mr-2 mb-1" width="20" alt="">Наш адрес:</h4>
+                    <p>Город Ташкент, Мирзо Улугбекский район, проспект Мустакиллик, дом 69, 100000
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4><img src="assets/img/mobile.png" class="mr-1 mb-1" width="15" alt=""> Контакты:</h4>
+                    <p>Телефон:(99871) 237-34-22 директор <br>(99871) 237-34-42 заместитель директора<br>(99871) 237-10-73 отдел духовности и просветительства <br> факс: (99871) 237-32-56  <br>e-mail: barkamol-avlod@inbox.uz</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Ижтимоий тармоқлар </h4>
+                    <div class="row">
+                        <a href="http://facebook.com/futboltv.uz" class="social-btn mr-2"><img src="assets/img/Facebook_Icon.png" alt=""></a>
+                        <a href="@Sherzodnabiyev915764123" class="social-btn mr-2"><img src="assets/img/Twitter_Icon.png" alt=""></a>
+                        <a href="https://t.me/REALMADRIDTG_FUDBOLTV_FUTBOLTV" class="social-btn"><img src="assets/img/ic_telegram_deactive.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright border-top border-white pt-3">
+            <div class="d-md-flex flex-row">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<script type="text/javascript" src="assets/js/libs.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/additional.js"></script>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+
+</body>
+</html>
